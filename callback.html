@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>Zalo OAuth Callback</title></head>
+<body style="font-family: sans-serif; padding: 20px;">
+<h2>Da nhan duoc code, sao chep va gui lai cho Claude:</h2>
+<pre id="code" style="background:#eee;padding:12px;word-break:break-all;font-size:16px;"></pre>
+<script>
+const params = new URLSearchParams(location.search);
+document.getElementById('code').textContent = params.get('code') || '(khong co code)';
+</script>
+</body>
+</html>
